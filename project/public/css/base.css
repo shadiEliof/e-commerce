@@ -1,0 +1,24 @@
+* {font-family: iran_yekan_regular!important;}
+.rtl{direction: rtl!important;}
+.ltr{direction: ltr!important;}
+.tar{text-align: right!important;}
+.tal{text-align: left!important;}
+.tac{text-align: center!important;}
+.font-light {font-family: iran_yekan_light!important}
+.font-regular {font-family: iran_yekan_regular!important;}
+.font-bold {font-family: iran_yekan_bold!important;}
+
+@font-face {
+    font-family: iran_yekan_light;
+    src: url('/project/public/assets/fonts/IRANYekanLight(FaNum).ttf');
+}
+
+@font-face {
+    font-family: iran_yekan_regular;
+    src: url('/project/public/assets/fonts/IRANYekanRegular(FaNum).ttf');
+}
+
+@font-face {
+    font-family: iran_yekan_bold;
+    src: url('/project/public/assets/fonts/IRANYekanBold(FaNum).ttf');
+}

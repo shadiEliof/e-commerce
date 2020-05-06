@@ -1,0 +1,128 @@
+html,
+body,
+header,
+.carousel {
+    height: 60vh;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .carousel {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .carousel {
+        height: 100vh;
+    }
+}
+.view,body,html{height:100%}
+.carousel{height:50%}
+.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}
+@media (max-width:776px){.carousel{height:100%}}
+.page-footer{background-color:#fb8d62}
+
+
+.color_primary{
+    background-color: #fb8d62;
+}
+
+.color_white{
+    color: #ffffff;
+}
+.profile{
+
+    margin-bottom: 5px;
+}
+.market_top_style{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+/*start header*/
+#header_title{
+    margin: 10px!important;
+}
+#header_icon{
+    height: 30px;
+    margin-bottom: 5px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+}
+#icon_phone{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+/*end header*/
+
+/*start footer style*/
+.footer {
+    background: #353535;
+    color: white;
+}
+
+.footer .links ul {
+    list-style-type: none;
+}
+
+.footer .links li a {
+    color: white;
+    transition: color 0.2s;
+}
+
+.footer .links li a:hover {
+    text-decoration: none;
+    color: #4180CB;
+}
+
+.footer .about-company i {
+    font-size: 25px;
+}
+
+.footer .about-company a {
+    color: white;
+    transition: color 0.2s;
+}
+
+.footer .about-company a:hover {
+    color: #4180CB;
+}
+
+.footer .location i {
+    font-size: 18px;
+}
+
+.footer .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/*end footer style*/
+
+@media only screen and (max-width: 320px) {
+
+    body {
+        font-size: 2em;
+    }
+
+}
+
+#login-button{
+  padding: 8px!important;
+}
+#img-login{
+    height:16px;
+    width :16px;
+
+}
+
+
