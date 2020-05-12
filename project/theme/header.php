@@ -1,6 +1,7 @@
 <?php
 $menu = main_model::fetch_heder_menu();
 $information = main_model::fetch_informations();
+$categories= main_model::fetch_categories();
 
 ?>
 
@@ -58,7 +59,9 @@ $information = main_model::fetch_informations();
             <div class="container main-container">
                 <!-- Start Main-Menu -->
                 <?php partial("main-menu", [
-                    "menu" => $menu
+                    "menu" => $menu,
+                    "categories" => $categories
+
                 ]) ?>
                 <!-- End Main-Menu -->
             </div>

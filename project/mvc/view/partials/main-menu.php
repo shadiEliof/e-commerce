@@ -4,11 +4,28 @@
 
 <nav class="main-menu dt-sl">
     <ul class="list float-right hidden-sm">
-        <?php foreach ($menu as $item) { ?>
+        <?php foreach ($categories as $item) { ?>
             <li class="list-item list-item-has-children mega-menu mega-menu-col-2">
-                <a class="nav-link" href="#"><?= $item["menu_title"];?></a>
-
+                <a class="nav-link" href="#"><?= $item["category_title"];?></a>
                 <ul class="sub-menu nav">
+                <?php foreach ($item['subs'] as $sub) { ?>
+
+                        <li class="list-item list-item-has-children">
+                            <a class="nav-link" href="#"><?= $sub["category_title"];?></a>
+                            <?php foreach ($sub['subs'] as $sub2) { ?>
+                                <ul class="sub-menu nav">
+                                    <li class="list-item">
+                                        <a class="nav-link" href="#"><?= $sub2["category_title"];?></a>
+                                    </li>
+                                </ul>
+                            <?php } ?>
+                        </li>
+
+
+
+                <?php } ?>
+                </ul>
+            <!--    <ul class="sub-menu nav">
                     <li class="list-item list-item-has-children">
                         <a class="nav-link" href="#">عنوان دسته</a>
                         <ul class="sub-menu nav">
@@ -58,7 +75,7 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul>-->
 
 
             </li>
